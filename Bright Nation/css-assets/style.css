@@ -1,30 +1,303 @@
+/* -- Base Reset --*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -- Body & Typography -- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fffdf6;
+  color: #333;
+  padding: 1rem;
+}
+
+/* -- Headings -- */
 h1 {
-    color:#964B00;
-
-}
-header, footer {
-    background-color:rgb(250, 232, 211);
-    padding: 20px;
-    text-align: center;
-
-  a:hover {
-    color:pink
-  }  
-}
-a{
-    text-decoration: none;
-color: black;
- word-spacing:8px;
-    letter-spacing: 2px;
-
-
-    
-} 
-
-.logo { 
-    float: left;
+  color: #964B00;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-#centre-image {
-    text-align:center
+h2 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+/* -- Header & Footer -- */
+header,
+footer {
+  background-color: rgb(250, 232, 211);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #f4d35e;
+}
+
+footer {
+  border-top: 2px solid #f4d35e;
+  font-size: 0.95rem;
+}
+
+/* -- Navigation -- */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  word-spacing: 8px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+/* -- Branding -- */
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* -- Hero Section -- */
+.hero, .hero-overlay {
+  position: relative;
+  height: 500px;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../Images/Images/community-training.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .button {
+  background-color: #f4d35e;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+  background-color: #ffd700;
+}
+
+/* -- Main Layout -- */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section p,
+section ul {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* -- Images -- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* -- Skills Training Icons -- */
+section ul li img {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* --Impact Stats -- */
+.impact-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.impact-grid div {
+  background-color: #fbeec1;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  font-weight: bold;
+}
+
+/* -- Testimonial -- */
+.testimonial blockquote {
+  font-style: italic;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-left: 5px solid #f4d35e;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* -- Success Stories -- */
+.success ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.success p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* -- Partnership -- */
+#partnership {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-left: 5px solid #f4d35e;
+  border-radius: 6px;
+}
+
+/* -- Buttons -- */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #f4d35e;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffd700;
+}
+
+/* -- Responsive Design-- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p,
+  section ul {
+    font-size: 1rem;
+  }
+
+  .impact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+  section ul {
+  display: flex;
+  gap: 2rem; 
+  /* Adjust spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  /* Allows wrapping on smaller screens */
+}
+
+section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 150px; 
+  font-weight: bold;
+}
+section ul li:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f4d35e;
+}
 }

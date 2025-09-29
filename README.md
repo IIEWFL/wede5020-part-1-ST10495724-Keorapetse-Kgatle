@@ -18,6 +18,7 @@ Changelog 15 August 2025
 •	Inserted placeholders contact details and copyright footer.
 23	August 2025
 •	Fixed spelling errors in Empowering (it was empowering), also had a <image></image> instead of <img></img> so that changed too, layout, and meaningful content.
+Github link : https://github.com/IIEWFL/wede5020-part-1-ST10495724-Keorapetse-Kgatle.git
 
 
 References
